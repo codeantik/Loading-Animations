@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balls {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balls div {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(47, 217, 230);
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+.balls div:nth-child(1) {
+    animation: balls 1.2s linear infinite;
+}
+
+.balls div:nth-child(2) {
+    animation: balls 1.2s linear 0.3s infinite;
+}
+
+.balls div:nth-child(3) {
+    animation: balls 1.2s linear 0.6s infinite;
+}
+
+.balls div:nth-child(4) {
+    animation: balls 1.2s linear 0.9s infinite;
+}
+
+
+@keyframes balls {
+    50% {transform: translateY(-40px)}
+    100% {transform: translateY(0p)}
+}
